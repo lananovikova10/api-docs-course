@@ -73,7 +73,7 @@ paths:
           $ref: '#/components/responses/ServerError'
 
     put:
-      summary: ""
+      summary: Обновить информацию о пользователе по ID
       operationId: usersIdPUT
       tags:
         - users
@@ -98,6 +98,8 @@ paths:
           $ref: '#/components/responses/Unauthorized'
         '404':
           $ref: '#/components/responses/UserNotFound'
+        '405':
+          $ref: '#/components/responses/MethodNotAllowed'
         '422':
           $ref: '#/components/responses/UnprocessableEntity'
         '500':
@@ -210,7 +212,6 @@ components:
           description: Описание ошибки, предоставляющее более детальную информацию о ее причине
           example: Пользователь не найден
 
-
   responses:
     UserListSuccess:
       description: Список пользователей успешно получен
@@ -279,6 +280,13 @@ components:
 
     UnprocessableEntity:
       description: Не удалось обработать объект 
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/error'
+
+    MethodNotAllowed:
+      description: Данный метод не поддерживается
       content:
         application/json:
           schema:
