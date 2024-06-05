@@ -4,3 +4,14 @@ theme:
   name: material
   palette:
     primary: deep orange
+plugins:
+  - search
+  - neoteroi.mkdocsoad
+extra_css:
+  - css/mkdocsoad.css
+
+markdown_extensions:
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true

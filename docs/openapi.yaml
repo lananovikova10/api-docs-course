@@ -1,8 +1,8 @@
 openapi: 3.0.0
 
 info:
-  title: Пример API для работы с пользователями
-  description: API для создания, получения, обновления и удаления пользователей.
+  title: User's API
+  description: API for creation, recetving info about, and deleting users.
   version: 1.0.0
 
 security:
@@ -10,9 +10,9 @@ security:
 
 servers:
   - url: http://158.160.86.46/api/prod
-    description: Основной сервер
+    description: Main server
   - url: http://158.160.86.46/api/dev
-    description: Тестовый сервер
+    description: Dev server
 
 paths:
   /users:

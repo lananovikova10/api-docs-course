@@ -1,6 +1,5 @@
 # Introduction to User's API
 
-# Introduction to Users API
 ## Overview of the Users API
 - Purpose and functionality
 - Key features
