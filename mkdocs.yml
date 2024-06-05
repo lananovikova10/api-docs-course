@@ -1,0 +1,6 @@
+site_name: User's API
+site_url: https://mydomain.org/mysite
+theme:
+  name: material
+  palette:
+    primary: deep orange
