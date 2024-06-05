@@ -79,6 +79,7 @@ paths:
         - users
       parameters:
         - name: id
+          description: Уникальный идентификатор пользователя
           in: path
           required: true
           schema:
@@ -146,16 +147,23 @@ components:
           description: Уникальный идентификатор пользователя
         username:
           type: string
+          description: Имя пользователя, латиницей.
         email:
           type: string
+          description: Адрес электронной почты.
         firstName:
           type: string
+          description: Имя.
         lastName:
           type: string
+          description: Фамилия.
         city:
           type: string
+          description: Город проживания.
         age:
           type: integer
+          description: Возраст.
+          minimum: 18
       example:
         id: 123
         username: newUser
@@ -175,18 +183,29 @@ components:
         - city
         - age
       properties:
+        id:
+          type: integer
+          format: int64
+          description: Уникальный идентификатор пользователя
         username:
           type: string
+          description: Имя пользователя, латиницей.
         email:
           type: string
+          description: Адрес электронной почты.
         firstName:
           type: string
+          description: Имя.
         lastName:
           type: string
+          description: Фамилия.
         city:
           type: string
+          description: Город проживания.
         age:
           type: integer
+          description: Возраст.
+          minimum: 18
       example:
         username: newUser
         email: user@example.com
