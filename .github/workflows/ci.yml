@@ -28,4 +28,5 @@ jobs:
       - run: pip install mkdocs==1.1.2
       - run: pip install mkdocs-material
       - run: pip install neoteroi-mkdocs
+      - run: pip install pymdown-extensions
       - run: mkdocs gh-deploy --force

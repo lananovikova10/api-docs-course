@@ -2,7 +2,7 @@ openapi: 3.0.0
 
 info:
   title: User's API
-  description: API for creation, recetving info about, and deleting users.
+  description: API for creation, receiving info about, and deleting users.
   version: 1.0.0
 
 security:
