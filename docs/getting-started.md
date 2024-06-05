@@ -11,5 +11,7 @@
 
 ## Making Your First Request
 - Example of a basic API request to retrieve all users
+
     ```bash
     curl -X GET "http://158.160.86.46/api/prod/users" -H "Authorization: Token YOUR_API_KEY"
+  - ```
