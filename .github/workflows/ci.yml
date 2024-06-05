@@ -27,5 +27,5 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs==1.1.2
       - run: pip install mkdocs-material
-      - run: pip install git+https://github.com/neoteroi/mkdocs-oad.git
+      - run: pip install neoteroi-mkdocs
       - run: mkdocs gh-deploy --force
