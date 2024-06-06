@@ -4,11 +4,16 @@ theme:
   name: material
   palette:
     primary: deep orange
+  logo: assets/images/ourlogo.png
+  icon:
+    repo: fontawesome/brands/github
 plugins:
   - search
   - neoteroi.mkdocsoad:
       use_pymdownx: true
 
+repo_url: https://github.com/lananovikova10/api-docs-course
+repo_name: api-docs-course
 extra_css:
   - css/mkdocsoad.css
 
